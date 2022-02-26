@@ -1,0 +1,99 @@
+.simulator-container {
+  /* variables */
+  --text-accent-color: 44, 129, 160;
+  --background-accent-color: 5, 117, 245;
+  --font-0: 1rem;
+  --font-1: 1.25rem;
+  --font-2: 1.5rem;
+
+  --border-radius: 5px;
+
+  font-family: "Muli", sans-serif;
+
+  /* general styling */
+  box-sizing: border-box;
+  width: 80%;
+  margin-inline: auto;
+
+  /* borders */
+  box-shadow: 0 0 10px 0 black;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.simulator-header {
+  text-align: center;
+  font-size: var(--font-2);
+  text-transform: uppercase;
+  /* font-weight: 100; */
+
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+}
+
+.simulator-input-block {
+  padding: 0.5rem 0;
+}
+
+.simulator-input-block h2,
+.simulator-installments-block h2 {
+  font-size: var(--font-1);
+  margin: 0 0 0.75rem 0;
+}
+
+.simulator-input-container {
+  color: rgb(var(--text-accent-color));
+  font-size: var(--font-2);
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  align-items: center;
+}
+
+.simulator-input-container input {
+  border: none;
+  min-width: 0;
+  border-radius: var(--border-radius);
+  color: rgb(var(--text-accent-color));
+  font-size: var(--font-2);
+  padding: 0.5rem;
+  background-color: rgba(var(--text-accent-color), 0.1);
+}
+
+.simulator-installment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.simulator-installment-option {
+  --current-color: #6c757d;
+  flex-grow: 1;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 0 12px -2px var(--current-color);
+  cursor: pointer;
+}
+
+.simulator-installment-option.active {
+  --current-color: rgb(var(--background-accent-color));
+}
+
+.simulator-installment-header {
+  background-color: var(--current-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: var(--font-0);
+}
+
+.simulator-installment-price {
+  color: black;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: var(--font-0);
+}
+
+.simulator-fix-style {
+  text-align: left;
+  color: black;
+}

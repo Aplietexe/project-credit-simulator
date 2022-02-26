@@ -1,0 +1,99 @@
+.simulator-container {
+  /* variables */
+  --text-accent-color: 44, 129, 160 !important;
+  --background-accent-color: 5, 117, 245 !important;
+  --font-0: 1rem !important;
+  --font-1: 1.25rem !important;
+  --font-2: 1.5rem !important;
+
+  --border-radius: 5px !important;
+
+  font-family: "Muli", sans-serif !important;
+
+  /* general styling */
+  box-sizing: border-box !important;
+  width: 80% !important;
+  margin-inline: auto !important;
+
+  /* borders */
+  box-shadow: 0 0 10px 0 black !important;
+  border-radius: var(--border-radius) !important;
+  padding: 1rem !important;
+}
+
+.simulator-header {
+  text-align: center !important;
+  font-size: var(--font-2) !important;
+  text-transform: uppercase !important;
+  /* font-weight: 100 !important; */
+
+  border-bottom: 1px solid black !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.simulator-input-block {
+  padding: 0.5rem 0 !important;
+}
+
+.simulator-input-block h2,
+.simulator-installments-block h2 {
+  font-size: var(--font-1) !important;
+  margin: 0 0 0.75rem 0 !important;
+}
+
+.simulator-input-container {
+  color: rgb(var(--text-accent-color)) !important;
+  font-size: var(--font-2) !important;
+  display: grid !important;
+  grid-template-columns: 1.6rem 1fr !important;
+  align-items: center !important;
+}
+
+.simulator-input-container input {
+  border: none !important;
+  min-width: 0 !important;
+  border-radius: var(--border-radius) !important;
+  color: rgb(var(--text-accent-color)) !important;
+  font-size: var(--font-2) !important;
+  padding: 0.5rem !important;
+  background-color: rgba(var(--text-accent-color), 0.1) !important;
+}
+
+.simulator-installment-options {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+}
+
+.simulator-installment-option {
+  --current-color: #6c757d !important;
+  flex-grow: 1 !important;
+  border-radius: var(--border-radius) !important;
+  overflow: hidden !important;
+  box-shadow: 0 0 12px -2px var(--current-color) !important;
+  cursor: pointer !important;
+}
+
+.simulator-installment-option.active {
+  --current-color: rgb(var(--background-accent-color)) !important;
+}
+
+.simulator-installment-header {
+  background-color: var(--current-color) !important;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  text-align: center !important;
+  font-size: var(--font-0) !important;
+}
+
+.simulator-installment-price {
+  color: black !important;
+  padding: 0.5rem !important;
+  text-align: center !important;
+  font-size: var(--font-0) !important;
+}
+
+.simulator-fix-style {
+  text-align: left !important;
+  color: black !important;
+}
